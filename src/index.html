@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Archive – Portal de Recetas, Técnicas y Secretos Culinarios</title>
+    <meta name="description" content="Descubre Food Archive, el portal que selecciona y organiza las mejores recetas y secretos culinarios.">
+    <link rel="stylesheet" href="estilos.scss">
+    <script type="module" src="main.js"></script>
+    <link rel="icon" href="img/favicon.jpg" type="image/jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Header -->
+    <header>
+
+        <div class="header-div-logo">
+            <a href="index.html">
+                <img class="header-img-logo" src="img/logo-food-archive.png" alt="Food Archive – Portal de gastronomía">
+            </a>
+        </div>
+
+        <nav> 
+            <a class="header-a" href="recetas.html">RECETAS</a> 
+            <a class="header-a" href="enlaces.html">ENLACES</a> 
+        </nav>
+
+    </header>
+
+    <!-- Main -->
+    <main>
+
+        <!-- Introducción -->
+
+        <section class="index-introduccion container-medio">
+
+            <h1 class="index-h1" lang="en">
+                Food Archive 
+            </h1>
+
+            <p>
+                El archivo definitivo para descubrir todo sobre gastronomía: 
+                recetas auténticas que merecen ser cocinadas.
+            </p>
+
+        </section>
+
+        <!-- Sección - Historia destacada con enlace a ficha y vídeo -->
+
+        <section class="index-historia-destacada">
+
+            <div class="index-historia-destacada-texto container-grande">
+
+                <h2>
+                    Receta destacada
+                </h2>
+
+                <p>
+                    Ramen de invierno (Japón)
+                </p>
+
+                <p>
+                    Un caldo profundo y reconfortante con sabores auténticos japoneses tradicionales
+                </p>
+
+                <a href="" class="index-btn">VER RECETA COMPLETA</a>
+
+            </div>
+
+            <!-- Vídeo -->
+            <figure class="video container-grande">
+                <iframe
+                    src="https://www.youtube.com/embed/Wqb2fz06zYo?si=AscVsdZEUKooBJ4v" 
+                    title="Sopa ramen en 30 minutos | Kwan Homsai" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </figure>
+
+        </section>    
+
+        <!-- Cards para explorar por categorías -->
+
+        <section class="index-categorias container-medio">
+
+            <h2 class="centrar">
+                Recetas por categorías
+            </h2>
+
+            <div class="index-cards-container">
+
+                <a href="recetas.html#Platos" class="index-card"> 
+                    <img src="img/plato.png" alt="Recetas de platos principales">
+                    <span class="index-card-texto">Platos</span>
+                </a>
+
+                <a href="recetas.html#Aperitivos" class="index-card">
+                    <img src="img/aperitivo.png" alt="Recetas de aperitivos">
+                    <span class="index-card-texto">Aperitivos</span>
+                </a>
+
+                <a href="recetas.html#Postres" class="index-card"> 
+                    <img src="img/postre.png" alt="Recetas de postres">
+                    <span class="index-card-texto">Postres</span>
+                </a>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+    
+        <div class="footer-container">
+        
+            <!-- Footer: sección 1 - formulario -->
+            <div class="footer-section footer-section--form">
+                <!-- Boletín -->
+                <p>
+                    Boletín electrónico: todas las novedades en tu bandeja de entrada
+                </p>
+                
+                <!-- Formulario -->
+                <form class="footer-form-container">
+
+                    <div>
+                        <!-- Correo electrónico -->
+                        <label for="email" class="footer-email-form">Correo electrónico</label>
+                        <input type="email" id="email" name="email" required placeholder="Tu correo">
+                    </div>
+
+                    <!-- Política de privacidad -->
+                    <div>
+                        <label>
+                            <input type="checkbox" name="privacidad" value="si" required>
+                            Al suscribirme, acepto recibir el boletín de <span lang=en>Food Archive</span> 
+                            y declaro que he leído y acepto su 
+                            <a class="footer-a" href="">política de privacidad</a>
+                        </label>
+                    </div>
+
+                    <!-- Botón de envío -->
+                    <div>
+                        <button type="submit" class="footer-btn-enviar">SUSCRÍBEME</button>
+                    </div>
+
+                </form>
+
+            </div>
+
+            <!-- Footer: sección 2 - info -->
+            <div class="footer-section footer-section--info">
+
+                <!-- Nosotros y contacto -->
+                <ul class="footer-ul">
+                    <li><a class="footer-a" href="">Sobre nosotros</a></li>
+                    <li><a class="footer-a" href="">Contacto</a></li>
+                </ul>
+
+                <!-- Legal -->
+                <ul class="footer-ul">
+                    <li><a class="footer-a" href="">Política de privacidad</a></li>
+                    <li><a class="footer-a" href="">Política de <span class="cursiva" lang=en>cookies</span></a></li>
+                    <li><a class="footer-a" href="">Aviso legal</a></li>
+                </ul>
+
+            </div>
+
+            <!-- Footer: sección 3 - otros -->
+            <div class="footer-section footer-section--other">
+
+                <!-- RRSS -->
+                <ul class="footer-ul">
+                    <li><a class="footer-a" href="">Instagram</a></li>
+                    <li><a class="footer-a" href="">TikTok</a></li>
+                    <li><a class="footer-a" href="">X</a></li>
+                </ul>
+                
+                <!-- Autoría -->
+                <ul class="footer-ul">
+                    <li>
+                        <abbr title="Universitat Oberta de Catalunya">UOC,</abbr>
+                        <time datetime="2025">2025</time>-<time datetime="2026">2026</time>. 
+                        <abbr title="HyperText Markup Language">HTML</abbr> y
+                        <abbr title="Cascading Style Sheets">CSS</abbr>
+                    </li>
+                    <li>Javier Ramírez Garrido</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </footer>    
+
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Recetas – Platos principales, aperitivos y postres | Food Archive</title>
+    <meta name="description" content="Explora nuestro completo catálogo de recetas: platos principales, aperitivos y postres.">
+    <link rel="stylesheet" href="estilos.scss">
+    <script type="module" src="main.js"></script>
+    <link rel="icon" href="img/favicon.jpg" type="image/jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Header -->
+    <header>
+
+        <div class="header-div-logo">
+            <a href="index.html">
+                <img class="header-img-logo" src="img/logo-food-archive.png" alt="Food Archive – Portal de gastronomía">
+            </a>
+        </div>
+
+        <nav> 
+            <a class="header-a" href="recetas.html">RECETAS</a> 
+            <a class="header-a" href="enlaces.html">ENLACES</a> 
+        </nav>
+
+    </header>
+
+    <!-- Main -->
+    <main>
+
+        <h1 class="container-xtra-grande font-big centrar">
+            Recetas de <span lang=en>Food Archive</span>
+        </h1>
+
+        <!-- Sección principal del catálogo -->
+        <section class="catalogo-section catalogo-principal container-xtra-grande">
+
+        <!-- Filtros -->
+            <div class="catalogo-filtros container-xtra-grande">
+
+                <!-- Menú de navegación -->
+                <nav class="menu-catalogo">
+                    <a class="menu-catalogo-a" href="recetas.html#Platos">PLATOS</a> 
+                    <a class="menu-catalogo-a" href="recetas.html#Aperitivos">APERITIVOS</a> 
+                    <a class="menu-catalogo-a" href="recetas.html#Postres">POSTRES</a> 
+                </nav>
+
+                <!-- Buscador -->
+                <form role="search" action="#" method="get">
+                    <label for="busqueda" class="visually-hidden">Buscar en <span lang=en>Food Archive</span></label>
+                    <input 
+                        type="search" 
+                        id="busqueda" 
+                        name="q" 
+                        placeholder="Buscar…" 
+                        aria-label="Buscar en Food Archive"
+                    >
+                    <!-- Icono -->
+                    <span class="icono-buscar">
+                        <img src="img/icon-search.svg" alt="Icono de búsqueda">
+                    </span>
+                </form>
+
+            </div>
+
+            <!-- Cards -->
+            <div class="catalogo-contenido">
+
+                <!-- Platos -->
+                <h2 class="container-xtra-grande" id="Platos">
+                    Platos
+                </h2>
+
+                <div class="catalogo-cards"> 
+                    <article class="card">
+                        <div class="card-info">
+                            <h3 class="card-titulo"><cite lang="en">Ramen</cite></h3>
+                            <p class="card-datos">Japón</p>
+                            <a href="ramen.html" class="btn font-small">VER RECETA</a>
+                        </div>
+                        <figure class="card-imagen">
+                            <img src="img/ramen-japones.jpg" alt="Plato de ramen en bol de cerámica">
+                            <figcaption>Plato de ramen en bol de cerámica |
+                                Foto de <a href="https://unsplash.com/es/@crystalsjo" class="text-link">Crystal Jo </a>
+                                en <a href="https://unsplash.com" class="text-link">Unsplash</a>
+                            </figcaption>
+                        </figure>
+                    </article>
+                
+                    <article class="card">
+                        <div class="card-info">
+                            <h3 class="card-titulo"><cite>Paella</cite></h3>
+                            <p class="card-datos">España</p>
+                            <a href="paella.html" class="btn font-small">VER RECETA</a>
+                        </div>
+                        <figure class="card-imagen">
+                            <img src="img/paella.jpg" alt="Paella española con arroz, mariscos y azafrán">
+                            <figcaption>Sabor mediterráneo en cada bocado |
+                                Foto de <a href="https://unsplash.com/es/@17_wei" class="text-link">Sandra Wei </a>
+                                en <a href="https://unsplash.com" class="text-link">Unsplash</a>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>    
+
+                <div class="catalogo-boton-container container-xtra-grande">
+                    <a href="" class="btn-catalogo">TODOS LOS PLATOS</a>
+                </div>
+
+                <!-- Aperitivos -->
+                <h2 class="container-xtra-grande" id="Aperitivos">
+                    Aperitivos
+                </h2>
+
+                <div class="catalogo-cards">
+                    <article class="card">
+                        <div class="card-info">
+                            <h3 class="card-titulo"><cite>Hummus</cite></h3>
+                            <p class="card-datos">Líbano</p>
+                            <a href="" class="btn font-small">VER RECETA</a>
+                        </div>
+                        <figure class="card-imagen">
+                            <img src="img/hummus.jpg" alt="Hummus cremoso con aceite de oliva y pan de pita">
+                            <figcaption>Crema de garbanzos con toque de limón y tahini |
+                                Foto de <a href="https://unsplash.com/es/@imad8321" class="text-link">Imad 786 </a>
+                                en <a href="https://unsplash.com" class="text-link">Unsplash</a>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    
+                    <article class="card">
+                        <div class="card-info">
+                            <h3 class="card-titulo"><cite lang="en">Ceviche</cite></h3>
+                            <p class="card-datos">Perú</p>
+                            <a href="" class="btn font-small">VER RECETA</a>
+                        </div>
+                        <figure class="card-imagen">
+                            <img src="img/ceviche.jpg" alt="Ceviche peruano de pescado con limón, cebolla y cilantro">
+                            <figcaption>Pescado fresco marinado en cítricos y especias |
+                                Foto de <a href="https://unsplash.com/es/@silvinhatrigo" class="text-link">Silvia Trigo </a>
+                                en <a href="https://unsplash.com" class="text-link">Unsplash</a>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>        
+
+                <div class="catalogo-boton-container container-xtra-grande">
+                    <a href="" class="btn-catalogo">TODOS LOS APERITIVOS</a>
+                </div>
+
+                <!-- Postres -->
+
+                <h2 class="container-xtra-grande" id="Postres">
+                    Postres
+                </h2>
+
+                <div class="catalogo-cards">
+                    <article class="card">
+                        <div class="card-info">
+                            <h3 class="card-titulo"><cite>Tiramisú</cite></h3>
+                            <p class="card-datos">Italia</p>
+                            <a href="" class="btn font-small">VER RECETA</a>
+                        </div>
+                        <figure class="card-imagen">
+                            <img src="img/tiramisu.jpg" alt="Tiramisú italiano con capas de café, mascarpone y cacao">
+                            <figcaption>Capas de café, mascarpone y cacao |
+                                Foto de <a href="https://unsplash.com/es/@vicaleksa" class="text-link">Victoria Aleksandrova </a>
+                                en <a href="https://unsplash.com" class="text-link">Unsplash</a>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-info">
+                            <h3 class="card-titulo"><cite lang="en">Tarta Tres Leches</cite></h3>
+                            <p class="card-datos">México</p>
+                            <a href="" class="btn font-small">VER RECETA</a>
+                        </div>
+                        <figure class="card-imagen">
+                            <img src="img/tarta.jpg" alt="Tarta casera dulce decorada con frutas frescas">
+                            <figcaption>Suave, húmedo y deliciosamente dulce |
+                                Foto de <a href="https://unsplash.com/es/@ivfreedom" class="text-link">Ivana M. </a>
+                                en <a href="https://unsplash.com" class="text-link">Unsplash</a>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>        
+
+                <div class="catalogo-boton-container container-xtra-grande">
+                    <a href="" class="btn-catalogo">TODOS LOS POSTRES</a>
+                </div>
+
+            </div>
+            
+        </section>
+
+        </main>
+
+
+        <!-- Footer -->
+        <footer>
+        
+            <div class="footer-container">
+            
+                <!-- Footer: sección 1 - formulario -->
+                <div class="footer-section footer-section--form">
+                    <!-- Boletín -->
+                    <p>
+                        Boletín electrónico: todas las novedades en tu bandeja de entrada
+                    </p>
+                    
+                    <!-- Formulario -->
+                    <form class="footer-form-container">
+
+                        <div>
+                            <!-- Correo electrónico -->
+                            <label for="email" class="footer-email-form">Correo electrónico</label>
+                            <input type="email" id="email" name="email" required placeholder="Tu correo">
+                        </div>
+
+                        <!-- Política de privacidad -->
+                        <div>
+                            <label>
+                                <input type="checkbox" name="privacidad" value="si" required>
+                                Al suscribirme, acepto recibir el boletín de <span lang=en>Food Archive</span> 
+                                y declaro que he leído y acepto su 
+                                <a class="footer-a" href="">política de privacidad</a>
+                            </label>
+                        </div>
+
+                        <!-- Botón de envío -->
+                        <div>
+                            <button type="submit" class="footer-btn-enviar">SUSCRÍBEME</button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <!-- Footer: sección 2 - info -->
+                <div class="footer-section footer-section--info">
+
+                    <!-- Nosotros y contacto -->
+                    <ul class="footer-ul">
+                        <li><a class="footer-a" href="">Sobre nosotros</a></li>
+                        <li><a class="footer-a" href="">Contacto</a></li>
+                    </ul>
+
+                    <!-- Legal -->
+                    <ul class="footer-ul">
+                        <li><a class="footer-a" href="">Política de privacidad</a></li>
+                        <li><a class="footer-a" href="">Política de <span class="cursiva" lang=en>cookies</span></a></li>
+                        <li><a class="footer-a" href="">Aviso legal</a></li>
+                    </ul>
+
+                </div>
+
+                <!-- Footer: sección 3 - otros -->
+                <div class="footer-section footer-section--other">
+
+                    <!-- RRSS -->
+                    <ul class="footer-ul">
+                        <li><a class="footer-a" href="">Instagram</a></li>
+                        <li><a class="footer-a" href="">TikTok</a></li>
+                        <li><a class="footer-a" href="">X</a></li>
+                    </ul>
+                    
+                    <!-- Autoría -->
+                    <ul class="footer-ul">
+                        <li>
+                            <abbr title="Universitat Oberta de Catalunya">UOC,</abbr>
+                            <time datetime="2025">2025</time>-<time datetime="2026">2026</time>. 
+                            <abbr title="HyperText Markup Language">HTML</abbr> y
+                            <abbr title="Cascading Style Sheets">CSS</abbr>
+                        </li>
+                        <li>Javier Ramírez Garrido</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+    </footer>  
+
+</body>
+</html>
