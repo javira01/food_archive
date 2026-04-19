@@ -48,7 +48,26 @@
 
             <div class="ficha-responsiva">
 
-                <img class= "ficha-img" src="img/ramen-detalle.jpg" alt="Ramen japonés">
+                <!-- <img class= "ficha-img" src="img/ramen-detalle.jpg" alt="Ramen japonés"> -->
+
+                <!-- <img class= "ficha-img"
+                    src="img/ramen-detalle-600.webp"
+                    srcset="
+                        img/ramen-detalle-300.webp 300w,
+                        img/ramen-detalle-600.webp 600w,
+                        img/ramen-detalle-900.webp 900w
+                    "
+                    sizes="300px"
+                    alt="Ramen japonés"> -->
+
+                <picture class="ficha-img">
+                    <source media="(max-width: 600px)" srcset="img/ramen-mobile.webp">
+                    <source media="(min-width: 601px)" srcset="img/ramen-desktop.webp">
+
+                    <img 
+                        src="img/ramen-desktop.webp" 
+                        alt="Ramen japonés">
+                </picture>
 
                 <div class="ficha-texto">
 
@@ -157,9 +176,9 @@
 
             <div class="swiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="./img/ramen1.png" alt="Fotograma de la receta: bol con el ramen terminado"></div>
-                <div class="swiper-slide"><img src="./img/ramen2.png" alt="Fotograma de la receta: preparación del caldo"></div>
-                <div class="swiper-slide"><img src="./img/ramen3.png" alt="Fotograma de la receta: se añaden los fideos"></div>
+                <div class="swiper-slide"><img src="./img/ramen1.webp" alt="Fotograma de la receta: bol con el ramen terminado"></div>
+                <div class="swiper-slide"><img src="./img/ramen2.webp" alt="Fotograma de la receta: preparación del caldo"></div>
+                <div class="swiper-slide"><img src="./img/ramen3.webp" alt="Fotograma de la receta: se añaden los fideos"></div>
             </div>
             <!-- Paginación -->
             <div class="swiper-pagination"></div>

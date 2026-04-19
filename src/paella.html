@@ -48,7 +48,28 @@
 
             <div class="ficha-responsiva">
 
-                <img class= "ficha-img" src="img/paella-detalle.jpg" alt="Paella valenciana">
+                <!-- <img class= "ficha-img" src="img/paella-detalle.jpg" alt="Paella valenciana"> -->
+
+                <!-- <img class= "ficha-img"
+                    src="img/paella-detalle-600.webp"
+                    srcset="
+                        img/paella-detalle-300.webp 300w,
+                        img/paella-detalle-600.webp 600w,
+                        img/paella-detalle-900.webp 900w
+                    "
+                    sizes="300px"
+                    alt="Paella valenciana"> -->
+
+                <!-- <img class= "ficha-img" src="img/paella-detalle.jpg" alt="Paella valenciana"> -->
+
+                <picture class="ficha-img">
+                    <source media="(max-width: 600px)" srcset="img/paella-mobile.webp">
+                    <source media="(min-width: 601px)" srcset="img/paella-desktop.webp">
+
+                    <img 
+                        src="img/paella-desktop.webp" 
+                        alt="Paella valenciana">
+                </picture>
 
                 <div class="ficha-texto">
 
@@ -140,9 +161,9 @@
 
             <div class="swiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="./img/paella1.png" alt="Fotograma de la receta: paella terminada"></div>
-                <div class="swiper-slide"><img src="./img/paella2.png" alt="Fotograma de la receta: ingredientes"></div>
-                <div class="swiper-slide"><img src="./img/paella3.png" alt="Fotograma de la receta: paella en preparación"></div>
+                <div class="swiper-slide"><img src="./img/paella1.webp" alt="Fotograma de la receta: paella terminada"></div>
+                <div class="swiper-slide"><img src="./img/paella2.webp" alt="Fotograma de la receta: ingredientes"></div>
+                <div class="swiper-slide"><img src="./img/paella3.webp" alt="Fotograma de la receta: paella en preparación"></div>
             </div>
             <!-- Paginación -->
             <div class="swiper-pagination"></div>

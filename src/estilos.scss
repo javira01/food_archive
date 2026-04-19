@@ -435,10 +435,10 @@ hr {
     margin: 2rem 0; 
 }
 
-.ficha-img {
-    border-radius: 50%;
-    border: 1px solid var(--color-negro);
-}
+// .ficha-img {
+//     // border-radius: 50%;
+//     border: 1px solid var(--color-negro);
+// }
 
 .blog-paginacion-ul {
     list-style: none;       
@@ -856,9 +856,24 @@ $primary-color: #607866;
         gap: 2rem;
     }
 
+    // .ficha-img {
+    //     flex: 0 0 25%; /* imagen a la izquierda ocupa 35% */
+    //     max-width: 25%;
+    // }
+
     .ficha-img {
-        flex: 0 0 25%; /* imagen a la izquierda ocupa 35% */
+        flex: 0 0 25%;
         max-width: 25%;
+        display: block;
+        margin-bottom: 0; /* Para que no empuje el HR de abajo */
+    }
+
+    /* ESTO ES LA IMAGEN DENTRO */
+    .ficha-img img {
+        width: 100%;    
+        height: auto;
+        display: block;
+        border: 1px solid var(--color-negro); /* El borde ponlo aquí */
     }
 
     .ficha-texto {
