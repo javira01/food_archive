@@ -181,10 +181,12 @@ nav a.header-a:not(:last-child)::after {
     text-align: center;
     margin-bottom: 0.5rem;
     font-size: 0.8rem;
+    transition: all 0.3s ease;
 }
 
 .footer-btn-enviar:hover {
     background-color: var(--color-rojo);
+    transform: scale(1.05);
 }
 
 .footer-form-container input[type="email"] {
@@ -263,10 +265,12 @@ label.footer-email-form {
     margin-bottom: 2.5rem;
     font-size: 0.8rem;
     align-self: flex-start;
+    transition: all 0.3s ease;
 }
 
 .index-btn:hover {
     background-color: var(--color-rojo);
+    transform: scale(1.05);
 }
 
 /* Contenedor para categorias */
@@ -287,12 +291,23 @@ label.footer-email-form {
     justify-content: center;
     text-decoration: none;
     border-radius: 1rem;
+    transition: transform 0.3s ease;
 }
 
 /* Icono dentro de la categoría */
 .index-card img {
     width: 12rem;
     height: auto;
+}
+
+.index-card:hover img {
+  animation: bounce 0.3s ease;
+}
+
+@keyframes bounce {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.15); }
+  100% { transform: scale(1); }
 }
 
 /* Texto dentro de la categoría */
@@ -553,6 +568,20 @@ hr {
 .card {
     display: flex;
     min-height: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.card img {
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05);
 }
 
 /* Mitad izquierda */
@@ -577,10 +606,12 @@ hr {
     padding: 0.5rem 1rem;
     text-decoration: none;
     font-weight: 700;
+    transition: all 0.3s ease;
 }
 
 .btn:hover {
     background-color: var(--color-rojo);
+    transform: scale(1.05);
 }
 
 /* Mitad derecha */
@@ -728,11 +759,13 @@ form[role="search"] input[type="search"] {
     margin-left: auto; 
     margin-bottom: 2rem;
     display: inline-block;
+    transition: all 0.3s ease;
     
 }
 
 .btn-catalogo:hover {
     background-color: var(--color-rojo);
+    transform: scale(1.05);
 }
 
 /* Contenedor de filtros: móvil/tablet en columna */
@@ -781,6 +814,19 @@ $primary-color: #607866;
   height: 100%;
   object-fit: cover;
   border: 2px solid $primary-color; 
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /************************************************************/
