@@ -292,6 +292,12 @@ label.footer-email-form {
     text-decoration: none;
     border-radius: 1rem;
     transition: transform 0.3s ease;
+      clip-path: polygon(
+    0 2%,
+    100% 0,
+    100% 95%,
+    0 100%
+  );
 }
 
 /* Icono dentro de la categoría */
