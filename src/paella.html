@@ -6,7 +6,7 @@
     <title>Receta – Paella valenciana | Food Archive</title>
     <meta name="description" content="Fuentes utilizadas para los contenidos de Food Archive.">
     <link rel="stylesheet" href="estilos.scss">
-    <script type="module" src="main.js"></script>
+    <script type="module" src="main.js" defer></script>
     <link rel="icon" href="img/favicon.jpg" type="image/jpeg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -161,9 +161,9 @@
 
             <div class="swiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="./img/paella1.webp" alt="Fotograma de la receta: paella terminada"></div>
-                <div class="swiper-slide"><img src="./img/paella2.webp" alt="Fotograma de la receta: ingredientes"></div>
-                <div class="swiper-slide"><img src="./img/paella3.webp" alt="Fotograma de la receta: paella en preparación"></div>
+                <div class="swiper-slide"><img src="./img/paella1.webp" loading="lazy" alt="Fotograma de la receta: paella terminada"></div>
+                <div class="swiper-slide"><img src="./img/paella2.webp" loading="lazy" alt="Fotograma de la receta: ingredientes"></div>
+                <div class="swiper-slide"><img src="./img/paella3.webp" loading="lazy" alt="Fotograma de la receta: paella en preparación"></div>
             </div>
             <!-- Paginación -->
             <div class="swiper-pagination"></div>
@@ -179,6 +179,7 @@
             <figure class="video">
                 <iframe 
                     src="https://www.youtube.com/embed/T-ppvkQdTu4?si=s1np3Wn9xjzD_JUc" 
+                    loading="lazy"
                     title="YouTube video player" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                     referrerpolicy="strict-origin-when-cross-origin" 
