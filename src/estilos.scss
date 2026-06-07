@@ -1,7 +1,6 @@
 /************************************************************/
 /* 1. RESET / NORMALIZACIÓN */
 /************************************************************/
-
 * {
     margin: 0;
     padding: 0;
@@ -43,7 +42,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, figure, div, img {
 }
 
 h1, h2, h3 {
-    font-family: "Play Display", serif;
+    font-family: "Playfair Display", serif;
     font-weight: 700;
     font-size: 1.7rem;
     padding-top: 1.5rem;
@@ -383,191 +382,12 @@ label.footer-email-form {
     padding: 0.2rem 0.5rem;
 }
 
-/* Contenedor de lista de descripción */
-.ficha-dl {
-    margin: 0;
-    padding: 0;
-}
-
-/* Términos de la lista */
-.ficha-dl dt {
-    font-weight: 700;
-    margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
-    color: var(--color-negro);
-}
-
-/* Descripción de cada término */
-.ficha-dl dd {
-    margin: 0 0 1rem 0; 
-    padding-left: 1.5rem;     
-    font-size: 0.95rem;
-    line-height: 1.5;
-    color: var(--color-negro);
-}
-
-/* Listas dentro de dd */
-.ficha-dl dd ul {
-    list-style: none;     
-    margin: 0;            
-    padding-left: 1.5rem;      
-}
-
-/* Opcional: separar cada item de la lista */
-.ficha-dl dd ul li {
-    margin-bottom: 0.25rem;
-}
-
-/* Lista de actores */
-.ficha-dl dd ul {
-    list-style: none; 
-    margin: 0;
-    padding: 0;
-    display: flex;        
-    flex-wrap: wrap;      
-    gap: 0.25rem;         
-}
-
-/* Cada actor */
-.ficha-dl dd ul li {
-    display: inline;       
-    position: relative;
-    padding-right: 0.8rem;
-    font-size: 0.95rem;
-    color: var(--color-negro);
-}
-
-/* Círculo rojo entre actores */
-.ficha-dl dd ul li:not(:last-child)::after {
-    content: "•";                 
-    color: var(--color-rojo);      
-    position: absolute;
-    right: 0;                
-    top: 0;                         
-    transform: translateY(0);    
-}
-
 /* Línea */
 hr {
     border: none;         
     height: 1px;             
     background-color: var(--color-negro); 
     margin: 2rem 0; 
-}
-
-// .ficha-img {
-//     // border-radius: 50%;
-//     border: 1px solid var(--color-negro);
-// }
-
-.blog-paginacion-ul {
-    list-style: none;       
-    display: flex;        
-    justify-content: center;
-    gap: 0.5rem;            
-    padding: 0;
-}
-
-.blog-paginacion-ul li {
-    border: 1px solid var(--color-negro); 
-    padding: 0; 
-    background-color: var(--color-blanco);
-    cursor: pointer;
-}
-
-.blog-paginacion-ul li a {
-    display: block;           
-    padding: 0.5rem 0.8rem;       
-    color: var(--color-negro);
-    text-decoration: none;
-    transition: all 0.3s;
-}
-
-.blog-paginacion-ul li:hover a {
-    background-color: var(--color-negro); 
-    color: var(--color-blanco);
-}
-
-.entrada-contenido {
-    display: flex;
-    flex-direction: column;  /* móvil: uno debajo del otro */
-    gap: 1rem;
-}
-
-.datos-entrada {
-    display: flex;
-    flex-direction: column;   /* móvil: uno debajo del otro */
-    gap: 0.5rem;              /* espacio entre filas */
-}
-
-.datos-entrada .dato {
-    display: inline-flex;     /* icono + texto en línea */
-    align-items: center;
-    gap: 0.4rem;              /* espacio icono-texto */
-}
-
-.datos-entrada img {
-    width: 1rem;
-    height: auto;
-}
-
-/* Titulares noticias blog */
-.titulo-entrada {
-    padding-bottom: 0.5rem;
-    line-height: 2rem;
-}
-
-.titulo-entrada a {
-    color: var(--color-negro);
-    text-decoration: none;
-}
-
-.titulo-entrada a:hover {
-    color: var(--color-rojo);
-}
-
-.leer-mas {
-    padding-bottom: 1rem;
-}
-
-.link-text a {
-    color: var(--color-negro);
-    text-decoration: none;            
-    border-bottom: 1px dotted var(--color-negro);
-    padding-bottom: 3px;                
-}
-
-.link-text a:hover {
-    border-bottom: 1px solid var(--color-negro); 
-}
-
-.tags {
-    display: flex;
-    align-items: center;     /* alineación vertical */
-    gap: 0.5rem;             /* espacio entre icono y tags */
-    flex-wrap: wrap;         /* por si hay muchos tags */
-}
-
-.tags img {
-    width: 1rem;
-    height: 1rem;
-    display: block;
-}
-
-.tags a {
-    display: inline-block;
-    padding: 0.2rem 0.6rem;
-    border: 1px solid var(--color-negro);
-    text-decoration: none;
-    font-size: 0.8rem;
-    color: var(--color-negro);
-    background-color: var(--color-beige);
-}
-
-.tags a:hover {
-    background-color: var(--color-rojo);
-    border: none;
 }
 
 /* Catálogo - Cards */
@@ -726,14 +546,6 @@ form[role="search"] input[type="search"] {
     flex-direction: row;  /* info a la izquierda, imagen a la derecha */
     /* gap: 1rem; */
 }
-
-/* Card info */
-/* .card-info {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-} */
 
 /* Imagen */
 .card-imagen {
@@ -908,11 +720,6 @@ $primary-color: #607866;
         gap: 2rem;
     }
 
-    // .ficha-img {
-    //     flex: 0 0 25%; /* imagen a la izquierda ocupa 35% */
-    //     max-width: 25%;
-    // }
-
     .ficha-img {
         flex: 0 0 25%;
         max-width: 25%;
@@ -984,6 +791,3 @@ $primary-color: #607866;
 
 
 }
-
-
-
